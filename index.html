@@ -90,20 +90,25 @@
        </div>
     </section>
 
-    <section class="contact" id="contact" >
-       <h2 class="text-center" >Contact</h2>
-       <div class="form">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" placeholder="Enter your Name" oninput="validateText(this)">
-        <span id="error-message" style="color: red; display: none;">You cannot enter numbers or special characters!</span> <br>
-
-        <label for="phone">Phone:</label>
-        <input type="number" name="phone" id="name" placeholder="Enter your Phone">
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="name" placeholder="Enter your Email">
-        <button class="btn submit-btn">Submit</button>
-       </div>
+    <section class="contact" id="contact">
+        <h2 class="text-center">Contact</h2>
+        <div class="form">
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your Name" oninput="validateText(this)">
+                <span id="error-message" style="color: red; display: none;">You cannot enter numbers or special characters!</span><br>
+    
+                <label for="phone">Phone:</label>
+                <input type="number" name="phone" id="phone" placeholder="Enter your Phone"><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email"><br>
+    
+                <button class="btn submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
     </section>
+    
     </section>
 
     <footer class="background">
